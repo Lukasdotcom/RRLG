@@ -6,7 +6,7 @@ def newGame():#Used for a new game
         "name" : "", 
         "attack" : 20,
         "defense" : 10,
-        "health" : 5,
+        "health" : 100,
         "maxHealth" : 100,
         "level" : 1,
         "XP" : 0,
