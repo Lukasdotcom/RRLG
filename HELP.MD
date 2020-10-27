@@ -12,3 +12,4 @@ XP - This used to calculate when to level up you need 5 XP for level 1, 10 for l
 Now for the confusing ones
 runChanceStart - When the enemy hits this many hitpoints the chance for running away starts
 runChanceIncrease - This is how much the chance increases every time the enemy loses another hitpoint after hitting runChanceStart
+gold - How much gold you have
