@@ -67,11 +67,11 @@ while player["health"] > 0:
         print("The", enemy["name"], "has died.")#Informs player
         #Calculates gold collected and adds it to the total and tells the player
         increase = round(random.random() * player["level"] * 10)
-        print("gold : " + str(player["gold"] + " +" + str(increase)))
+        print("gold : " + str(player["gold"]) + " +" + str(increase))
         player["gold"] += increase
         #Same but for XP
         increase = round(random.random() * player["level"] * 5)
-        print("XP : " + str(player["XP"] + " +" + str(increase)))
+        print("XP : " + str(player["XP"]) + " +" + str(increase))
         player["XP"] += increase
         #Checks if the player advances to the next level and then informs the player and calculates the amount the different stats increase
         if player["XP"] >= 5 * player["level"]:
