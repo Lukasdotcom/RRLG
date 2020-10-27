@@ -9,8 +9,6 @@ def enemyAction(enemy):
         return"defend"
     else:
         return"attack"
-statTypesPlayer = ("defense", "attack", "maxHealth", "health", "level", "XP") #Will print these stats for the player in the info action
-statTypesEnemy = ("defense", "attack", "health", "runChanceStart", "runChanceIncrease") #Will print these stats for the enemy
 print("You have been attacked by a", enemy["name"]) #Tells the player who they are attacked by
 #Prints the players name and the stats of the player
 print(player["name"] + "'s stats")
@@ -67,10 +65,14 @@ while player["health"] > 0:
                 print("The", enemy["name"], "attack was unsuccessful")
     if enemy["health"] <= 0: #Checks if the enemy is dead
         print("The", enemy["name"], "has died.")#Informs player
-        #Calculates XP collected and adds it to the total and tells the player
-        xpGained = round(random.random() * player["level"] * 5)
-        player["XP"] += xpGained
-        print("You gained", xpGained, "XP")
+        #Calculates gold collected and adds it to the total and tells the player
+        increase = round(random.random() * player["level"] * 10)
+        print("gold : " + str(player["gold"] + " +" + str(increase)))
+        player["gold"] += increase
+        #Same but for XP
+        increase = round(random.random() * player["level"] * 5)
+        print("XP : " + str(player["XP"] + " +" + str(increase)))
+        player["XP"] += increase
         #Checks if the player advances to the next level and then informs the player and calculates the amount the different stats increase
         if player["XP"] >= 5 * player["level"]:
             print("You leveled up from", player["level"], "to", player["level"] + 1)
@@ -87,5 +89,4 @@ while player["health"] > 0:
             player["health"] = player["maxHealth"]
         else:#If the player does not advance to the next level they are told how much more they need to advance
             print("You need", ((player["level"] * 5) - player["XP"]), "more XP to level up.")
-            
         break
