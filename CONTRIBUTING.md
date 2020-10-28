@@ -1,6 +1,6 @@
 <h1> Notes on Issues and Pull requests </h1>
 Always have only a single change or issue in each one so instead of saying add potions, say add health potion.
-
+Also you can send a pull request for something hat is not an issue.
 
 <h1/>What branch to contribute on</h1>
 Contribute on the main branch new features and bug fixes for the next release and on the bug fix branch bugfixes for the latest stable version.
