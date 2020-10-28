@@ -13,7 +13,7 @@ def newGame():#Used for a new game
         "gold" : 0
         }
     player["name"] = input("What is your name: ") #Asks the player what they want to be called
-print("""------Welcome to RRLG(Random Rougelike game) V0.2 - Shop and Save Prerelease--------
+print("""------Welcome to RRLG(Random Rougelike game) V0.2 - Shop and Save--------
 If you need help for this game open HELP.md""") #introduction text
 names = ["Goblin", "Skeleton", "Zombie", "Snail"] #A list of all creature Names
 statTypesPlayer = ("defense", "attack", "maxHealth", "health", "level", "XP", "gold") #Will print these stats for the player in the info action
