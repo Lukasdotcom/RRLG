@@ -38,7 +38,7 @@ if update == "y":
             zip.close()
             os.remove(update["zip"]) #deletes the zip file
             currentDirectory = os.getcwd() #Finds the currentDirectory
-            os.rename((currentDirectory + "/" + update["folder"] + "/updater.py"), (currentDirectory + "/updater.py")) #Moves updater.py out of the extracted folder
+            os.rename(("r'" + currentDirectory + "/" + update["folder"] + "/updater.py"), (currentDirectory + "/updater.py")) #Moves updater.py out of the extracted folder
             exec(open("updater.py").read())
         else:#Notifies user that the update protocol has changed
             print("This program does not support auto update anymore please open https://github.com/Lukasdotcom/RRLG/releases to get the latest version.")
