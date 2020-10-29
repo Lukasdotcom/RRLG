@@ -11,7 +11,7 @@ if update == "y":
     file = open("version.json",)
     update = json.load(file)
     file.close
-    if update["version"] != "v0.2.21": #Checks that a new version was released
+    if update["version"] != "v0.2.2": #Checks that a new version was released
         #Notifies the user that there is a new version and what it is and tells the user if this program crashes during the update process to reinstall the program
         print(update["version"] + " is out. It will be installed now.")
         print("If this program crashes please reinsall the program from github.")
@@ -44,4 +44,5 @@ if update == "y":
             print("This program does not support auto update anymore please open https://github.com/Lukasdotcom/RRLG/releases to get the latest version.")
     else: #Notifies user that they are on the latest version
         print("You are on the latest version")
+
 
