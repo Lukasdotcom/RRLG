@@ -5,6 +5,7 @@ try:#Removes the old version.json if it exists
 except:
     None
 if update == "y":
+    print("Looking for newest version...")
     #Downloads the json file from github and reads it
     wget.download("https://raw.githubusercontent.com/Lukasdotcom/RRLG/bugfix/version.json")
     file = open("version.json",)
