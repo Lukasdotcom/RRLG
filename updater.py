@@ -14,6 +14,7 @@ print("Preparing game...")
 for x in files: #moves all the files out into the correct location
     os.rename((currentDirectory + "/" + update["folder"] + "/" + x), (currentDirectory + "/" + x))
 os.remove("r'" + currentDirectory + "/version.json")
-    os.rmdir("r'" + update["folder"]) #removes the old folder
+os.rmdir("r'" + update["folder"]) #removes the old folder
 print("Finished starting program.")
 exec(open("start.py").read())#starts the game
+
