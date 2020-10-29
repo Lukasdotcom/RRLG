@@ -1,4 +1,4 @@
-files = ["battle.py", "CONTRIBUTING.md", "HELP.MD", "LICENSE", "README.md", "shop.py", "start.py", "updateChecker.py", "autosave.json"] #list of all the files that exist in this program
+files = ["battle.py", "CONTRIBUTING.md", "HELP.MD", "LICENSE", "README.md", "shop.py", "start.py", "updateChecker.py"] #list of all the files that exist in this program
 os.remove("updateChecker.py")#Removes the old update checker
 print("Conerting saves...")
 #This will convert the save
