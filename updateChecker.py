@@ -6,7 +6,7 @@ except:
     None
 if update == "y":
     #Downloads the json file from github and reads it
-    wget.download("https://github.com/Lukasdotcom/RRLG/blob/bugfix/version.json")
+    wget.download("https://raw.githubusercontent.com/Lukasdotcom/RRLG/bugfix/version.json")
     file = open("version.json",)
     update = json.load(file)
     file.close
