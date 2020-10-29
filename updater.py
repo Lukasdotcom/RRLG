@@ -12,7 +12,8 @@ if save[1] != False: #looks if a save file even exists
         print("Your save file was corrupted during the update process")
 print("Preparing game...")
 for x in files: #moves all the files out into the correct location
-    os.rename(("r'" + currentDirectory + "/" + update["folder"] + "/" + x), (currentDirectory + "/" + x))
-os.rmdir("r'" + update["folder"]) #removes the old folder
+    os.rename(("r'" + currentDirectory + "/" + update["folder"] + "/" + x), ("r'" + currentDirectory + "/" + x))
+os.remove("r'" + currentDirectory + "/version.json")
+    os.rmdir("r'" + update["folder"]) #removes the old folder
 print("Finished starting program.")
 exec(open("start.py").read())#starts the game
